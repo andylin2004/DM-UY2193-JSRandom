@@ -1,0 +1,23 @@
+body {
+    /* make the font in the body a sans-serif font */
+    font-family: sans-serif;
+}
+
+#output {
+    /* align output text to the center */
+    text-align: center;
+    /* remove all margins */
+    margin: 0;
+    /* we want to have as much padding as the width of the screen has minus the font width divided by 2 */
+    padding-left: auto;
+    padding-right: auto;
+    /* we want the output text to take up as much width as needed, nothing more than that */
+    width: fit-content;
+}
+
+#entryRow {
+    /* via https://stackoverflow.com/questions/24086707/set-z-index-not-working-button-behind-a-container-html-css; i need to set position to relative for the z index to take effect */
+    position: relative;
+    /* we want the entry to be as up as we can */
+    z-index: 99999999999;
+}
